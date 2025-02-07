@@ -44,6 +44,6 @@ jobs:
             git pull origin main
             mvn clean package
             docker build --rm -t spring-mongodb-image .
-            docker compose up -d --build
+            docker-compose up -d --build
 
   
